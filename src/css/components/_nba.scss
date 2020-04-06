@@ -1,0 +1,43 @@
+div.align{
+	display: flex;
+	width: 100%;
+	text-align: center;
+	justify-content: space-between;
+	.is-ready & {
+    background-color: rgba(black, 0.3);
+  }
+
+}
+
+.nba{
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+ 
+}
+
+
+@media all and (max-width:1610px )
+{
+  .nba{
+  font-size: 18px;
+  padding: calc(100vh/45);
+}
+
+}
+
+@media all and (max-width:1290px )
+{
+  .nba{
+  font-size: 16px;
+  padding: calc(100vh/45);
+}
+
+}
+
+
+
+

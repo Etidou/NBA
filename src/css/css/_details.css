@@ -1,0 +1,194 @@
+.details {
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center; }
+
+.is-ready .details {
+  background-color: white; }
+
+.secondflex {
+  display: flex;
+  flex-direction: columns; }
+
+div.player {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  padding-right: 50px; }
+
+h4.lastname {
+  color: #222222;
+  width: 190px;
+  text-align: center; }
+h4.small {
+  color: #222222;
+  width: 175px;
+  text-align: center; }
+
+span.jersey, h4.firstname {
+  color: #222222;
+  width: 215px;
+  text-align: center; }
+
+.blocjoueur {
+  margin-top: 8px;
+  width: 100%;
+  height: 36px;
+  border-radius: 5px;
+  border: solid 1px #222222;
+  display: flex;
+  justify-content: space-between; }
+  .blocjoueur:first-child {
+    margin-top: 8px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px #222222; }
+  .blocjoueur:last-child {
+    margin-top: 8px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px #222222;
+    margin-bottom: 32px; }
+  .blocjoueur.not_matched {
+    display: none;
+    width: 100%; }
+
+#info {
+  display: flex;
+  margin-top: 39px;
+  justify-content: space-between; }
+
+#numero {
+  margin-left: 16px;
+  width: 37px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222222; }
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px; }
+  .search input:first-child, .search input:last-child {
+    padding-top: 20px;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    color: blue;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 16px;
+    width: auto;
+    background-color: transparent; }
+
+span.info_club {
+  font-weight: bold;
+  width: calc(100%/1.5);
+  text-align: center; }
+span.info {
+  font-weight: bold;
+  width: calc(100%/2);
+  text-align: center; }
+
+p.teamname {
+  width: calc(100%/2.5); }
+
+div.bloclub {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #222222;
+  margin: 30px;
+  border-radius: 0px; }
+  div.bloclub:hover {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #DEFFF8;
+    background-color: #DEFFF8;
+    margin: 30px;
+    border-radius: 50px;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out; }
+div.team_east, div.team_west {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+h4.nameclub, h4.fullname, h4.nickname {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-beetween;
+  padding-top: 10px; }
+
+div.align_logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+  transform: translateY(-50%); }
+  div.align_logo img.logo {
+    width: 150px;
+    text-align: center; }
+
+img.sublogo {
+  width: 300px;
+  text-align: center; }
+
+.playerteam {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 15;
+  transition-duration: 1s; }
+  .playerteam.open {
+    transform: translateX(0);
+    overflow-y: auto;
+    background-color: white; }
+
+body.scroll {
+  overflow: hidden; }
+
+.cross {
+  width: 3%;
+  margin-left: 50%; }
+
+.clubeast, .clubwest {
+  width: 100%;
+  display: flex; }
+
+.flex-team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 100px; }
+
+.playerteamwest, .playerteameast {
+  width: 65%; }
+
+div.column {
+  padding-right: 40px;
+  width: 100%; }

@@ -1,0 +1,462 @@
+.details {
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.is-ready .details {
+  background-color: white;
+}
+
+
+p {
+  width: 100%;
+}
+
+p.teamname_second {
+  display: none;
+}
+
+
+.secondflex {
+  display: flex;
+  flex-direction: columns;
+}
+
+div.player {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+h4 {
+  &.lastname {
+    color: $grey;
+    width: 190px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+  }
+
+  &.small {
+    color: $grey;
+    width: 175px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+  }
+}
+
+span.jersey, h4.firstname {
+  color: $grey;
+  width: 215px;
+  text-align: center;
+  margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.blocjoueur {
+  margin-top: 8px;
+  width: 100%;
+  height: 36px;
+  border-radius: 5px;
+  border: solid 1px $grey;
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-top: 8px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px $grey;
+  }
+
+  &:last-child {
+    margin-top: 8px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px $grey;
+    margin-bottom: 32px;
+  }
+
+  &.not_matched {
+    display: none;
+    width: 100%;
+  }
+}
+
+#info {
+  display: flex;
+  margin-top: 39px;
+  justify-content: space-between;
+}
+
+#numero {
+  margin-left: 16px;
+  width: 37px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: $grey;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+
+  input {
+    &:first-child, &:last-child {
+      padding-top: 20px;
+      font-family: Roboto;
+      font-size: 60px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.07;
+      letter-spacing: normal;
+      color: $blue_search;
+      outline: none;
+      border: 0;
+      border-bottom: 2px solid $grey;
+      padding-bottom: 16px;
+      width: auto;
+      background-color: transparent;
+      transition:border-bottom ease-in-out .3s
+    }
+
+   &:focus {
+ border-bottom: 2px solid $blue_search;
+ transition: 1s;
+}
+  }
+}
+
+
+
+span {
+  &.info_club {
+    font-weight: bold;
+    width: calc(100%/1.5);
+    text-align: center;
+  }
+
+  &.info {
+    font-weight: bold;
+    width: calc(100%/2);
+    text-align: center;
+  }
+}
+
+p.teamname {
+  width: calc(100%/2.5);
+}
+
+p.teamname_second {
+  width: calc(100%/2.5);
+}
+
+div {
+  &.bloclub {
+    width: 300px;
+    height: 300px;
+    border: 2px solid $grey;
+    margin: 30px;
+    border-radius: 0px;
+    transition-duration: 0.5s;
+
+    &:hover {
+      width: 300px;
+      height: 300px;
+      border: 2px solid $blue_search;
+      background-color: $blue_search;
+      margin: 30px;
+      border-radius: 50px;
+      transition: 0.5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+    -moz-transition:0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition:0.5s ease-in-out;
+    }
+
+   &.not_matched {
+    display: none;
+    width: 100%;
+  }
+  }
+
+  &.team_east, &.team_west {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+h4 {
+  &.nameclub, &.fullname, &.nickname {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-beetween;
+    padding-top: 10px;
+  }
+}
+
+div.align_logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+  transform: translateY(-50%);
+
+  img.logo {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+img.sublogo {
+  width: 300px;
+  text-align: center;
+}
+
+.playerteam {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 15;
+  transition-duration: 1s;
+
+  &.open {
+    transform: translateX(0);
+    overflow-y: auto;
+    background-color: white;
+  }
+}
+
+body.scroll {
+  overflow: hidden;
+}
+
+.cross {
+  width: 3%;
+  margin-left: 50%;
+  margin-top: 2%;
+}
+
+.clubeast, .clubwest {
+  width: 100%;
+  display: flex;
+}
+
+.flex-team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+}
+
+.playerteamwest, .playerteameast {
+  width: 65%;
+}
+
+div.column {
+  padding-right: 40px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+@media all and (max-width:1610px )
+{
+
+img.sublogo {
+    width: 225px;
+    text-align: center;
+}
+
+.search input:first-child, .search input:last-child {
+    font-size: 40px;
+    width: 42%;
+}
+div.menuconf {
+    width: 85%;
+}
+
+}
+
+
+@media all and (max-width:1450px )
+{
+
+span.jersey, h4.firstname {
+    font-size: 14px;
+}
+
+h4 {
+  &.lastname {
+    font-size: 14px;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+}
+
+.flex-team {
+    padding: 0 50px 0 50px;
+}
+
+div.column {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.search input:first-child, .search input:last-child {
+    width: 48%;
+}
+
+div {
+  &.bloclub {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+    &:hover {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+  }
+}
+
+div.align_logo img.logo {
+
+    width: 100px;
+
+}
+
+div.align_logo {
+    transform: translateY(-60%);
+}
+
+}
+
+
+@media all and (max-width:1376px )
+{
+
+span {
+  &.info_club {
+    font-size: 14px;
+  }
+
+  &.info {
+    font-size: 14px;
+  }
+}
+
+p.teamname {
+  font-size: 14px;
+}
+
+img.sublogo {
+    width: 175px;
+    text-align: center;
+}
+
+.search input:first-child, .search input:last-child {
+    width: 38%;
+    font-size: 30px;
+}
+
+}
+
+@media all and (max-width:1290px )
+{
+
+span {
+  &.info_club {
+    font-size: 12px;
+  }
+
+  &.info {
+    font-size: 12px;
+  }
+}
+
+p.teamname {
+  font-size: 12px;
+}
+
+span.jersey, h4.firstname {
+    font-size: 12px;
+}
+
+h4 {
+  &.lastname {
+    font-size: 12px;
+  }
+
+  &.small {
+    font-size: 12px;
+  }
+}
+
+.flex-team {
+    padding: 0 25px 0 50px;
+}
+
+.search input:first-child, .search input:last-child {
+    width: 40%;
+}
+
+h4 {
+  &.lastname {
+    margin-top:12px;
+    margin-bottom:12px;
+
+  }
+
+  &.small {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+  }
+}
+
+span.jersey, h4.firstname {
+margin-top:12px;
+margin-bottom:12px;
+}
+
+
+p.teamname_second {
+  display: none;
+}
+
+p {
+  width: 100%;
+}
+
+}
+
+
+
