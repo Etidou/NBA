@@ -24,6 +24,17 @@ config = {
                 test: /\.html$/,
                 use: 'html-loader'
             },
+
+              {
+                test: /\.hbs$/,
+                use: 'handlebars-loader'
+            },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader',
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -73,6 +84,14 @@ config = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/third.html',
+            filename: 'third.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/fourth.html',
+            filename: 'fourth.html'
         }),
         new MiniCssExtractPlugin({
             filename: `style.css`
